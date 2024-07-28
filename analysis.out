@@ -1,0 +1,27 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00        1     0.00     0.00  search(int*, int, int)
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+                                   1             main [3]
+[3]      0.0    0.00    0.00       0+1       main [3]
+                0.00    0.00       1/1           search(int*, int, int) [4]
+                                   1             main [3]
+-----------------------------------------------
+                0.00    0.00       1/1           main [3]
+[4]      0.0    0.00    0.00       1         search(int*, int, int) [4]
+-----------------------------------------------
+
+Index by function name
+
+   [4] search(int*, int, int)
